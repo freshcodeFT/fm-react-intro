@@ -40,14 +40,12 @@ class Counter extends React.Component {
     this.state = {
       counter: 0,
     };
-    this.increment = this.increment.bind(this);
-    this.decrement = this.decrement.bind(this);
   }
-  increment() {
+  increment = () => {
     const {counter} = this.state;
     this.setState({counter: counter + 1});
   }
-  decrement() {
+  decrement = () => {
     const {counter} = this.state;
     this.setState({counter: counter - 1});
   }
